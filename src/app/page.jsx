@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <div className="flex justify-center items-center back bg-pink-100 h-screen">
-      <div className="h-fit flex justify-center items-center flex-col gap-10 w-fit bg-amber-50">
+      <div className="h-fit flex justify-center items-center flex-col gap-10 w-xl bg-amber-50">
         <h1 className="text-3xl">{profiles.length} BIRTHDAYS TODAY</h1>
         <div className="flex gap-10 flex-col">
           {profiles.map((profile) => {
@@ -49,7 +49,7 @@ export default function Home() {
               </div>
             );
           })}
-          <button className="w-xl bg-pink-500" onClick={clearAll}>
+          <button className="w-full px-5 bg-pink-500" onClick={clearAll}>
             clear all
           </button>
         </div>
